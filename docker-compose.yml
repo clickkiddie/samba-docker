@@ -1,0 +1,11 @@
+version: "3.0"
+
+services:
+  samba:
+    build: .
+    image: clickkiddie/samba
+    container_name: samba
+    ports:
+      - "445:445/tcp"
+    volumes:
+      - "/media/usbhd:/share"
