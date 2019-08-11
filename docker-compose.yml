@@ -9,3 +9,4 @@ services:
       - "445:445/tcp"
     volumes:
       - "/media/usbhd:/share"
+    restart: always
